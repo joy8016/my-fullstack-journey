@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #c2c2fa;
+    min-height: 100vh;
+    border: 10px solid #050540;
+    
+}
+.content{
+    max-width: 900px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+.image_container,img{
+    width: 300px;
+    height: 330px;
+    /* margin: 0 100px; */
+
+}
+
+.image_container{
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+.top-section h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: lowercase;
+
+}
+.top-section h4{
+    text-align: end;
+    font-size: 20px;
+}
+
+.top-section{
+    margin: 90px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.about_section h2{
+    /* background-color: #d35d0e; */
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 500;
+    
+}
+.about_section p{
+    /* background-color: rgb(144, 8, 8); */
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-align: justify;
+}
+
+.education_section{
+    margin: 50px 0px;
+}
+.education_section h3{
+    margin-bottom: 20px;
+}
+.education_section ul{
+    margin-left: 50px;
+    letter-spacing: 1.2px;
+}
+.education_section li{
+    margin-bottom: 14px;
+}
+.achivement{
+    margin: 50px 0px;
+}
+.achivement h3{
+    margin-bottom: 20px;
+}
+.achivement ul{
+    margin-left: 50px;
+    letter-spacing: 1.2px;
+}
+.hobby_section{
+    margin: 50px 0px;
+}
+.hobby_section h3{
+    margin-bottom: 20px;
+}
+.hobby_section ul{
+    margin-left: 50px;
+    letter-spacing: 1.2px;
+
+}
+.hobby_section li{
+    margin-bottom: 14px;
+}
+footer p{
+    text-align: end;
+
+}
