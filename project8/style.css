@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*  */
+}
+
+
+
+html,
+body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+}
+.input{
+    display: flex;
+
+
+}
+.youtube-logo img{
+    width: 150%;
+    height: auto;
+}
+.search{
+    display: flex;
+    
+
+}
+
+.search input{
+    min-width: 600px;
+    padding: 10px 20px;
+    border: 0.3 solid #ccc;
+    
+}
+
+.search button{
+    
+    border: none;
+    padding: 10px 20px;
+
+}
+
+.mic{
+    display: grid;
+   padding: 15px;
+   border-radius: 50%;
+   background-color: #e5dfdf;
+   /* place-items: center; */
+   margin-left: 20px;
+   align-items: center;
+}
+
+.mic img{
+    width:35px;
+    
+}
+
+.side-nav{
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+    margin-right: 50px;
+
+}
+.tags{
+    display: flex;
+    padding: 10px 20px;
+    gap: 15px;
+    border-top: 1px solid #ccc;
+}
+.tag{
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: #eee9e9;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+aside{
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+.side-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.side-icons img{
+    width: 30px;
+
+}
+.side-icons p{
+    font-size: 10px;
+    margin-top: -6px;
+}
+.bars{
+    margin-top: 17px;
+}
+
+.main-container{
+    width: 100%;
+}
+main{
+    min-height: 100vh;
+    background: rgb(240, 238, 238);
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.card{
+    padding:10px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.avtar-content{
+    padding-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.content-status{
+    display: flex;
+    
+    gap: 13px
+}
