@@ -200,6 +200,31 @@ main{
       width: 70px;
     }
     .mic{
-        width: 60px;
+        width: 40px;
+        margin-left: 29px;
+        padding: 2px 2px;
+    }
+    .tag{
+        width: 45px;
+        font-size: 9px;
+        padding: 2px 1px 2px 9px;
+        
+    }
+    aside{
+        display: none;
+    }
+    nav{
+        gap: 19px;
+    }
+    .mic-picture{
+        
+    
+    }
+    .side-nav{
+        width: 120px;
+        
+    }
+    .main-container{
+        margin-left: -6px;
     }
 }
