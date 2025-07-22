@@ -12,14 +12,163 @@ html,
 body {
     line-height: 1.4;
     font-weight: 300;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
     line-height: 1.4;
     scroll-behavior: smooth;
     
 
 }
 
+
+/* 1 rem = 16px */
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.5rem;
+}
+header{
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+
 nav{
-    background-color: red;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
    
+}
+ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+nav ul li{
+    font-size: 1.8rem;
+}
+nav ul li:hover{
+    border-bottom: #2903ff 2px solid;
+}
+nav i{
+    font-size: 2.5rem;
+}
+
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+#hero{
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.hero-section h1{
+    font-size: 6rem;
+    line-height: 1.5;
+
+}
+.hero-section h4{
+    font-size: 2.8rem;
+    font-weight: 300;
+
+}
+
+
+.hero-section{
+    /* background-color: yellow; */
+}
+
+.hero-image img{
+   
+    border-radius: 5rem;
+}
+.card-content{
+    /* background-color: #2903ff; */
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+
+    
+
+}
+.h-card{
+    /* background-color: pink; */
+    display: flex;
+    margin: 2rem 1rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 1rem;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 3px 4px #ccc;
+    
+}
+
+.status{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 2rem; */
+}
+
+.read-btn{
+    all: unset;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+}
+
+.read-btn:hover{
+    border-bottom: 2px solid red;
+}
+
+.v-card{
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 320px;
+    border: 1px solid #e2e2e2;
+    border-radius: 1rem;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 3px 4px #ccc;
+    
+
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    
+    
+}
+.card-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.v-card img{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    
+
+
+}
+
+footer ul li{
+    font-size: 2rem;
 }
