@@ -172,3 +172,26 @@ footer{
 footer ul li{
     font-size: 2rem;
 }
+
+ hr{
+    margin: 3rem 0;
+}
+.status1{
+    display: flex;
+    gap: 20px;
+}
+.main2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.heading{
+    margin: 20px 0;
+}
+.image img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
