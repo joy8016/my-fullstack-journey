@@ -28,7 +28,7 @@ body{
 }
 
 header{
-    background-color: rgb(11, 124, 184);
+    background-color: rgb(8, 44, 63);
 }
 nav{
     
@@ -74,7 +74,7 @@ a{
 }
 
 #hero{
-    background-color: rgb(6, 78, 116);
+    background-color: rgb(19, 71, 111);
     border-bottom: 4px solid rgb(18, 34, 85);
     
     
@@ -145,7 +145,7 @@ a{
 
 /* project sevtion */
 #project{
-    background-color: #093f56;
+    background-color: #0d4a64;
     
 }
 #project h2{
@@ -173,7 +173,7 @@ a{
     flex-direction: column;
     border-radius: 0.5rem;
     overflow: hidden;
-    transition: 0.5s ease-in-out;
+    transition: 0.8s ease-in-out;
     
 }
 
@@ -184,5 +184,91 @@ a{
 }
 
 .card:hover img{
-    transform: scale();
+    transform: scale(1.07);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
 }
+.card-content{
+    position: relative;
+    padding: 2rem;
+   
+    font-size: 2rem;
+     text-align: center;
+    color: black;
+    /* background-color: white;
+    transition: 2s ease-in-out;
+     */
+
+     top: -6rem;
+     margin-bottom: -6rem;
+     transition: 0.5s ease-in-out;
+     
+     transform: translateY(100px);
+     
+}
+
+.card:hover .card-content{
+    background: rgb(243, 248, 248);
+    transform: translateY(0px)
+}
+
+
+#contact{
+    background-color: rgb(15, 60, 103);
+   
+}
+.container2{
+
+    display: flex;
+   
+    flex-direction: column;
+  align-items: center;
+    padding: 5rem;
+   
+   
+}
+.container2 h2{
+    font-size: 6rem;
+    margin: 2rem 0;
+     
+
+     
+}
+.icon{
+    font-size: 3rem;
+    gap: 8rem;
+    padding: 5rem;
+}
+.top_contact{
+    display: flex;
+    gap: 3rem;
+   
+  
+
+}
+.another{
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+    padding: 2.9rem;
+
+
+   
+}
+.likedin {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+
+}
+footer{
+    background-color: rgb(9, 43, 67);
+
+}
+footer p{
+    text-align: center;
+    padding: 4rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+   
