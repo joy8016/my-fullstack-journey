@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+:root{
+    --lead: #212121;
+    --gold-finger: #F2BD12;
+    --eye-ball: #FFFDF7;
+    --hint-yellow: #FCF1CC;
+    --pure-white: #FFF;
+}
+
+body{
+    background:var(--eye-ball);
+}
+
+
+
+
+/* BASIC STYLING */
+
+a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--lead);
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.navlist{
+    gap: 3rem;
+}
+
+li{
+    list-style: none;
+}
+.wrapper{
+    max-width: 1400px;
+
+    margin: auto;
+    /* background: yellow; */
+    padding-inline: 1.5rem;
+}
+.gap-2{
+    gap: 2rem;
+}
+
+
+
+
+/* HEASDER STYLING */
+
+.navbar{
+    min-height: 14vh;
+}
+.logo{
+    font-size: 2rem;
+    color: var(--gold-finger);
+    font-weight: bolder;
+}
+.btn{
+    background: var(--gold-finger);
+    font-size: 1.3rem;
+    padding: 0.9rem 1rem;
+    border-radius: 1rem;
+    color: var(--pure-white);
+    box-shadow: 0px 2px 1px black;
+    transition: 0.4s ease-in-out;
+}
+.btn:hover{
+    background: var(--lead);
+    
+}
+.cart-icon{
+    color: var(--lead);
+    font-size: 1.3rem;
+    position: relative;
+}
+.cart-icon .cart-val{
+    position:absolute;
+    top: 50%;
+    right: -10px;
+    font-size: 0.8rem;
+    color: var(--lead);
+    width: 20px;
+    aspect-ratio: 1;
+    background-color: var(--gold-finger);
+   
+    text-align: center;
+    line-height: 1.3rem;
+    border-radius: 100px;
+
+
+}
+
+.desktop-action .hamburger{
+    font-size: 1.8rem;
+    display: none;
+
+}
+.mobile-menu{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION STYLING */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER STYLING */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width:786px) {
+    
+
+    .navlist,
+    .desktop-action .btn{
+        display: none;
+    }
+    .desktop-action .hamburger{
+        display: block;
+    }
+}
