@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto Condensed", sans-serif;
+    /* border: .1rem solid red; */
 }
 
 :root{
@@ -32,6 +33,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 
 }
@@ -54,7 +56,12 @@ li{
 }
 
 
-
+img{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
 
 /* HEASDER STYLING */
 
@@ -72,7 +79,7 @@ li{
     padding: 0.9rem 1rem;
     border-radius: 1rem;
     color: var(--pure-white);
-    box-shadow: 0px 2px 1px black;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.194);
     transition: 0.4s ease-in-out;
 }
 .btn:hover{
@@ -110,36 +117,63 @@ li{
     display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.p-top{
+    padding-top: 10px;
+}
 
 
 /* SECTION STYLING */
 
+.hero-section{
+    background: rgb(220, 227, 227);
+    min-height: calc(100vh - 14vh);
 
+}
+.content-section,
+.image-container{
+    flex: 1;
+    flex-basis: 300px;
+}
+
+h1{
+    font-size: 5.6vw;
+    color: var(--lead);
+}
+
+h1 span{
+    color: var(--gold-finger);
+}
+p{
+    font-size: 1.25rem;
+    color: gray;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+
+.para{
+    /* background: red; */
+    margin-block: 2rem;
+    max-width: 550px;
+}
+.social-icon{
+    background: var(--hint-yellow);
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+   line-height: 3rem;
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.194);
+   transition: 0.3s ease-in-out;
+
+}
+.social-icon:hover{
+    background: var(--lead);
+    color: var(--pure-white);
+}
+.text-center{
+    text-align: center;
+}
 
 
 
@@ -180,61 +214,11 @@ li{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* MEDIA QUERIES */
 
 @media (max-width:786px) {
     
-
+  /* HEADER STYLLING */
     .navlist,
     .desktop-action .btn{
         display: none;
@@ -242,4 +226,46 @@ li{
     .desktop-action .hamburger{
         display: block;
     }
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        position: absolute;
+        top: 20%;
+        left: -100%;
+        transform: translateX(-50%);
+        background: var(--pure-white);
+        width: 20rem;
+        padding: 2rem;
+        border: .2rem solid var(--gold-finger);
+        border-radius: 2rem;
+        box-shadow: 
+        rgba(0, 0, 0, 0.1) 8px 8px 8px,
+        rgba(0, 0, 0, 0.1) 8px 8px 8px inset ;
+
+        transition: all 0.5s ease-in-out;
+    }
+    .mobile-menu-active{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* SECTION STYLLING */
+
+    h1{
+        font-size: 3.6rem;
+        
+    }
+    .content-section{
+        padding-top: 3rem;
+    }
+
+    .gap-2{
+        gap: 1.4rem;
+    }
+
+}   .gap-4{
+    gap: 4rem;
 }
