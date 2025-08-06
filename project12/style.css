@@ -60,6 +60,12 @@ li {
     gap: 2rem;
 }
 
+.gap-3 {
+    gap: 4rem;
+}
+
+
+
 .margin-top {
     margin-top: 9rem;
 }
@@ -78,6 +84,11 @@ img {
 
 .mt-4 {
     margin-top: 4rem;
+}
+
+
+.mt-half{
+    margin-top: .5rem;
 }
 
 /* HEASDER STYLING */
@@ -258,20 +269,79 @@ p {
 .order-card {
     flex: 1;
     flex-basis: 300px;
-    padding: 0 1rem 2rem 1rem;
+    /* padding: 0 1rem 2rem 1rem; */
+    padding-bottom: 3rem;
     background: var(--pure-white);
     border: .2rem solid var(--gold-finger);
     border-radius: 2rem;
     box-shadow:
-        rgba(0, 0, 0, 0.1) 8px 8px 8px,
-        rgba(0, 0, 0, 0.1) 8px 8px 8px inset;
+        rgba(0, 0, 0, 0.05) 8px 8px 8px,
+        rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
 
 
 }
 
 .order-card img {
     width: 15rem;
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 0rem 0.8rem 1rem);
 }
+
+h4 {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: var(--lead);
+}
+
+
+.order-card .price {
+    padding: 1.3rem 0 2rem 0;
+    font-size: 1.7rem;
+
+
+}
+
+
+
+/* SECTION 03 */
+
+.review-container{
+    /* background: red; */
+
+    width: 650px;
+    max-width: 100%;
+    flex: 1;
+    
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+
+.profile{
+    width: 4rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    overflow:hidden;
+}
+
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.profile-container{
+    display: flex;
+    
+}
+
+.fa-star{
+    color: var(--gold-finger);
+}
+
 
 
 
