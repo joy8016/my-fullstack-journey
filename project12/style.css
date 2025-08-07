@@ -91,6 +91,20 @@ img {
     margin-top: .5rem;
 }
 
+.between{
+    gap: 3rem;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+
+
+
+
+
+
 /* HEASDER STYLING */
 
 .navbar {
@@ -342,6 +356,64 @@ h4 {
     color: var(--gold-finger);
 }
 
+.arrow{
+    width: 2.0rem;
+    aspect-ratio: 1;
+    background: var(--gold-finger);
+    border-radius: 100vw;
+    text-align: center;
+    color: var(--lead);
+    padding: 7px;
+
+}
+
+
+/* SECTION 04 */
+
+.app-container{
+    background: var(--hint-yellow);
+    padding: 2rem 6rem;
+    border-radius: 2rem;
+    /* gap: 5rem; */
+
+    
+}
+
+.app-container .content h2{
+    font-size: 4rem;
+}
+
+.app-container .image-container img{
+    width: 25rem;
+}
+
+
+/* SECTION 05 */
+
+.input-container{
+    width: 43rem;
+    max-width: 100%;
+    background: var(--pure-white);
+    padding: auto;
+    box-shadow: 
+    rgba(0, 0, 0, 0.168) 0 5px 8px;
+    border-radius: 1rem;
+
+    
+}
+
+input[type="email"]{
+    flex: 1;
+    height: 4vh;
+    background: transparent;
+    border: none;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+}
+
+input[type="email"]:focus{
+    outline: none;
+}
 
 
 
@@ -442,6 +514,16 @@ h4 {
 
     h2 {
         font-size: 2.6rem;
+    }
+
+    /* SECTION -4 */
+    .app-container{
+        padding: 2.2rem;
+    }
+
+    .app-container .content h2{
+        font-size: 3.4rem;
+
     }
 
 
