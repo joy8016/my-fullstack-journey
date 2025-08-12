@@ -316,6 +316,12 @@ h4 {
 
 }
 
+/* CART TAB */
+
+.cart-tab{
+    background-color: var(--hint-yellow);
+}
+
 
 
 /* SECTION 03 */
