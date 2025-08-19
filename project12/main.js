@@ -12,6 +12,9 @@ const cardList = document.querySelector('.card-list');
 
 const cartlist = document.querySelector('.cart-list');
 
+const cartTotal = document.querySelector('.cart-total');
+const cartValue = document.querySelector('.cart-val');
+
 cartIcon.addEventListener('click', ()=>
     cartTab.classList.add('cart-tab-active'));
 
@@ -22,6 +25,25 @@ closeBtn.addEventListener('click', ()=>cartTab.classList.remove('cart-tab-active
 
 let productList = [];
 let cartProduct = [];
+
+
+
+const updateTotal = ()=>{
+    let totalprice = 0;
+    let totalQuantity = 0;
+
+    document.querySelectorAll('.item').forEach(item =>{
+        const price = parseFloat(item.querySelector('.item-total').textContent.replace('$', ''));
+        const value = parseInt(item.querySelector('.quantity-value').textContent);
+
+        totalprice+=price;
+        totalQuantity+=value;
+    })
+
+    cartTotal.textContent = `$${totalprice.toFixed(2)}`
+    cartValue.textContent = totalQuantity;
+
+}
 
 const showCard = ()=>{
     productList.forEach(product =>{
@@ -93,6 +115,8 @@ const addToCart = (product) =>{
     `;
 
     cartlist.appendChild(cartItem);
+
+    updateTotal();
     
 
     const plusBtn = cartItem.querySelector('.plus');
@@ -107,6 +131,7 @@ const addToCart = (product) =>{
         quantity++;
         quantityValue.textContent = quantity;
         itemTotal.textContent = `$${(quantity*price).toFixed(2)}`;
+         updateTotal();
     });
     minusBtn.addEventListener('click', (e)=>{
 
@@ -115,12 +140,19 @@ const addToCart = (product) =>{
             quantity--
             quantityValue.textContent = quantity;
             itemTotal.textContent = `$${(quantity*price).toFixed(2)}`;
+           updateTotal();
 
         }
         else{
+
+            cartItem.classList.add('slide-out');
             
-            cartProduct = cartProduct.filter(item => {item.id !== product.id});
-            cartItem.remove();
+            setTimeout(()=>{
+                cartItem.remove();
+                cartProduct = cartProduct.filter((item) => {item.id !== product.id});
+                updateTotal();
+               
+            },300)
         }
             
         
