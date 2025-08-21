@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #5097e3;
+}
+
+.container{
+    max-width: 900px;
+  
+    margin: 500px auto;
+    background: #f4f1f1;
+    padding: 1rem;
+   /* box-shadow: 2px 3px 4px gray; */
+   box-shadow: 3px 3px 5px rgba(54, 51, 51, 0.261), -3px -3px 5px rgba(52, 52, 54, 0.287);
+
+   border-radius: .4rem;
+
+}
+
+h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+input{
+    width: 100%;
+    padding: .6rem;
+    margin: .8rem 0;
+    border: 1px solid black;
+    border-radius: .5rem;
+    box-shadow: -2px -3px 7px rgba(0, 0, 0, 0.313);
+
+}
+#calculator-btn{
+    width: 100%;
+    padding: .3rem;
+    margin-top: 4rem;
+    background: rgb(38, 115, 210);
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    box-shadow:  1px 3px 4px rgba(128, 128, 128, 0.85);
+    border: none;
+    transition: .3s ease-in;
+    
+
+}
+#calculator-btn:hover{
+    background: rgb(35, 68, 106);
+}
+
+
+p{
+    font-size: 1.4rem;
+    margin-bottom:1rem ;
+}
+.title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: .09;
+}
+
+
+
+#total{
+    margin-top: 1rem;
+}
+
+.Total{
+    font-size: 1.2rem;
+    
+}
+
+#total{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+#bill{
+    font-size: 1.3rem;
+}
+#tip{
+    font-size: 1.3rem;
+}
