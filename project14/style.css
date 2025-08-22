@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to left bottom, lightgreen, lightblue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkcyan;
+    font-family: monospace;
+    font-weight: bold;
+}
+.main-container{
+    background: linear-gradient(to left bottom, rgba(144, 238, 144, 0.428), rgb(90, 204, 242));;
+    padding: 1rem;
+    box-shadow: 2px 5px 9px gray;
+    border-radius: 6px;
+
+}
+.temp-container{
+    display: flex;
+    justify-content: space-between;
+   
+    gap: 4rem;
+    padding: 1.5rem 0;
+    
+}
+
+
+label{
+    font-size: 1.5rem;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+input{
+   padding: .5rem 0 .5rem .3rem;
+   border: none;
+    background: linear-gradient(to left bottom, rgba(144, 238, 144, 0.428), rgb(182, 219, 232));
+    box-shadow: inset 1px 1px 3px;
+
+
+}
