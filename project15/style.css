@@ -5,3 +5,29 @@
     font-family: 'Poppins', sans-serif;
 
 }
+
+.container{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #ffe8f0;
+  width: 100%;
+  min-height:100vh;
+  
+
+
+}
+.testimonial{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+
+}
+.testimonial-text{
+    background: red;
+    color: #ccc;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    
+}
