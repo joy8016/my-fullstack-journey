@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: antiquewhite;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background: rgb(10, 2, 19);
+
+    height: 40px;
+    align-items: center;
+    color: white;
+
+
+
+
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+ul li {
+    padding: 0 10px;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 72vh;
+    background: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    padding: 34px;
+    border-radius: 12px;
+    background-image: url(bg.jpg);
+
+}
+
+.bottom {
+    position: sticky;
+    background: black;
+    bottom: 0;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.bottom input {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+}
+
+.icons {
+    margin-top: 16px;
+    display: flex;
+    gap: 1rem;
+
+
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background: white;
+    color: black;
+   
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin: 16px 0;
+    box-shadow: inset 2px 3px 5px;
+
+}
+
+.songItem img{
+    width: 44px;
+    margin: 0 10px;
+    border-radius: 34px;
+}
+.timestamp{
+    margin: 0 20px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top:70px;
+}
