@@ -122,3 +122,12 @@ ul li {
 .songItemContainer{
     margin-top:70px;
 }
+.songInfo{
+    position: absolute;
+    left: 9vw;
+
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
