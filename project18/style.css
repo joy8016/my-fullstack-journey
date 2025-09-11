@@ -14,20 +14,27 @@ nav {
     color: white;
     height: 3rem;
     font-family: "Oswald", sans-serif;
-    font-size: 2rem;
-    text-align: center;
+    font-size: 1.6rem;
+   
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+   justify-content: center;
+   padding: 8px 0;
+    
+   
 }
 
 .gameContainer {
-    background: red;
+    
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    color: black;
 }
+
 
 .container {
     display: grid;
@@ -63,7 +70,8 @@ nav ul {
 
 }
 .imgbox img{
-    display: none;
+   width: 0;
+   transition: 1s ease-in-out;
 }
 
 .bt-0{
@@ -84,5 +92,27 @@ nav ul {
 }
 
 h1{
-    font-size: 4vw;
+    font-size: 5vw;
+}
+.info{
+    font-size: 1rem;
+}
+
+#reset{
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    background: gray;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media screen and(max-width:800px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 3rem;
+    }
 }
