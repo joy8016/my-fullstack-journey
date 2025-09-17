@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    overflow: hidden;
+}
 
 .gamecontainer {
     background-image: url(bg.png);
@@ -30,4 +33,41 @@
     bottom: 0;
     left: 40vw;
 
+}
+.animateDino{
+    animation: dino 0.3s linear;
+}
+.obstacleANI{
+    animation: obstacleANI 1S linear infinite;
+}
+.gameover{
+    visibility: hidden;
+}
+
+@keyframes dino{
+    0%{
+        bottom: 0;
+        
+
+    }
+    50%{
+        bottom: 422px;
+
+    }
+    100%{
+
+        bottom: 0;
+    }
+}
+
+
+@keyframes obstacleANI{
+    0%{
+        left: 100vw;
+
+    }
+    100%{
+        left: -10vw;
+
+    }
 }
