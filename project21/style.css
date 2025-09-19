@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     overflow: hidden;
 }
 
@@ -13,7 +14,8 @@ body{
     height: 100vh;
     background-repeat: no-repeat;
 }
-.dino{
+
+.dino {
     background-image: url(dino.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,10 +24,11 @@ body{
     left: 100px;
     width: 230px;
 
-    height:114px;
+    height: 114px;
 }
-.obstacle{
-   background-image: url(dragon.png);
+
+.obstacle {
+    background-image: url(dragon.png);
     background-size: cover;
     position: absolute;
     width: 166px;
@@ -34,39 +37,81 @@ body{
     left: 40vw;
 
 }
-.animateDino{
+
+.animateDino {
     animation: dino 0.3s linear;
 }
-.obstacleANI{
-    animation: obstacleANI 1S linear infinite;
+
+.obstacleANI {
+    animation: obstacleANI 3S linear infinite;
 }
-.gameover{
+
+.gameover {
+    font-size: 4rem;
+    color: rgb(243, 243, 6);
+    padding: 20px;
+    text-shadow: 10px 10px 5px black;
+   
+
+
+
+
+
     visibility: hidden;
 }
 
-@keyframes dino{
-    0%{
+.playagainContainer {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.201);
+    /* color: white; */
+    text-align: center;
+    width: 30vw;
+    height: 30vh;
+    margin: auto;
+    top: 70px;
+    border: 1px solid black;
+    border-radius: 6px;
+   
+
+}
+
+.playagain {
+    border: 1px solid rgb(24, 23, 23);
+    width: 30vw;
+    height: 30vh;
+    margin: -13px;
+    background-color: rgba(128, 128, 128, 0.415);
+    border-radius: 6px;
+
+
+}
+
+@keyframes dino {
+    0% {
         bottom: 0;
-        
+
 
     }
-    50%{
+
+    50% {
         bottom: 422px;
 
     }
-    100%{
+
+    100% {
 
         bottom: 0;
     }
 }
 
 
-@keyframes obstacleANI{
-    0%{
+@keyframes obstacleANI {
+    0% {
         left: 100vw;
 
     }
-    100%{
+
+    100% {
         left: -10vw;
 
     }

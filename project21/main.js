@@ -1,23 +1,26 @@
-document.onkeydown = function(e){
-    console.log("the key code is: " , e.keyCode);
-    if(e.keyCode == 38){
+score = 0;
+cross = true;
+
+document.onkeydown = function (e) {
+    // console.log("the key code is: " + e.keyCode);
+    if (e.keyCode == 38) {
         dino = document.querySelector('.dino');
         dino.classList.add('animateDino');
-        setTimeout(()=>{
+        setTimeout(() => {
             dino.classList.remove('animateDino');
 
-        }, 300);
-       
+        }, 950);
+
     }
-    if(e.keyCode == 39){
+    if (e.keyCode == 39) {
         dino = document.querySelector('.dino');
         dinoX = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
         dino.style.left = dinoX + 112 + 'px';
     }
-    if(e.keyCode == 37){
+    if (e.keyCode == 37) {
         dino = document.querySelector('.dino');
         dinoX = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
-        dino.style.left = (dinoX - 112 )+ 'px';
+        dino.style.left = (dinoX - 112) + 'px';
     }
 
 }
@@ -33,13 +36,36 @@ setInterval(() => {
 
 
     ox = parseInt(window.getComputedStyle(obstacle, null).getPropertyValue('left'));
-    oy = parseInt(window.getComputedStyle(dino, null).getPropertyValue('top'));
-    
-    offsetX = Math.abs(dx-ox);
-    offsetY = Math.abs(dy-oy);
+    oy = parseInt(window.getComputedStyle(obstacle, null).getPropertyValue('top'));
 
-    if(offsetX<93 && offsetY<52){
+    offsetX = Math.abs(dx - ox);
+    offsetY = Math.abs(dy - oy);
+    // console.log(offsetY, offsetX);
+
+    if (offsetX < 95 && offsetY < 52) {
         gameover.style.visibility = 'visible';
         obstacle.classList.remove('obstacleANI');
     }
+    else if (offsetX < 145 && cross) {
+        score += 1;
+
+        updatescore(score);
+        cross = false;
+        setTimeout(() => {
+            cross = true;
+        }, 1000);
+        setTimeout(() => {
+            aniduration = parseFloat(window.getComputedStyle(obstacle, null).getPropertyValue('animation-duration'));
+            newDuration = aniduration-0.1;
+            obstacle.style.animationDuration = newDuration + 's';
+            console.log(newDuration);
+
+        }, 500);
+
+    }
 }, 100);
+
+function updatescore() {
+    scoreCount.innerHTML = "Your score: " + score;
+
+}
